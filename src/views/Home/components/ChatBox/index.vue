@@ -326,7 +326,7 @@ const sendEmoji = throttle((url: string) => {
                   </div>
                   <Icon
                     v-if="emojiList.length < 50"
-                    class="item-add"
+                    class="cursor-pointer item-add"
                     icon="tianjia"
                     :size="30"
                     @click="openFileSelect('img', true)"
@@ -334,13 +334,13 @@ const sendEmoji = throttle((url: string) => {
                 </div>
                 <div class="footer">
                   <Icon
-                    :class="['footer-act', { active: panelIndex === 0 }]"
+                    :class="['cursor-pointer', 'footer-act', { active: panelIndex === 0 }]"
                     icon="biaoqing"
                     :size="18"
                     @click="panelIndex = 0"
                   />
                   <Icon
-                    :class="['footer-act', { active: panelIndex === 1 }]"
+                    :class="['cursor-pointer', 'footer-act', { active: panelIndex === 1 }]"
                     icon="aixin"
                     :size="18"
                     @click="panelIndex = 1"
